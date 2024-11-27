@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="./CSS/home.css">
+    <link rel="stylesheet" href="./CSS/payments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <h1><a href="#">INFINITY TECHNOLOGIES</a></h1>
+    <nav class="navbar">
+        <label class="logo"><img src="./Images/logo2.webp" alt=""></label>
+        <ul>
+            <li><a class="active" href="./home.html"><i class="fa-solid fa-house"></i>HOME</a></li>
+            <li><a href="./gallery.html"><i class="fa-solid fa-photo-film"></i>GALLERY</a></li>
+            <li><a href="./about-us.html"><i class="fa-solid fa-address-card"></i>ABOUT US</a></li>
+            <li><a href="./contact-us.html"><i class="fa-solid fa-phone"></i>CONTACT US</a></li>
+            <li><a href="shop.html"><i class="fa-solid fa-cart-shopping"></i>SHOP</a></li>
+        </ul>
+    </nav>
+    <main>
+    <div class="contain">
+        <h2>Confirm Your Payment</h2>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Owner</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card number</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+                <h3>Card number</h3>
+                <div class="selection">
+                    <div class="date">
+                        <select name="months" id="months">
+                            <option value="Jan" class="value">Jan</option>
+                            <option value="Feb" class="value">Feb</option>
+                            <option value="Mar" class="value">Mar</option>
+                            <option value="Apr" class="value">Apr</option>
+                            <option value="May" class="value">May</option>
+                            <option value="Jun" class="value">Jun</option>
+                            <option value="Jul" class="value">Jul</option>
+                            <option value="Aug" class="value">Aug</option>
+                            <option value="Sept" class="value">Sept</option>
+                            <option value="Oct" class="value">Oct</option>
+                            <option value="Nov" class="value">Nov</option>
+                            <option value="Dec" class="value">Dec</option>
+                        </select>
+                        <select name="years" id="years">
+                            <option value="2024" class="value">2024</option>
+                            <option value="2023" class="value">2023</option>
+                            <option value="2022" class="value">2021</option>
+                            <option value="2021" class="value">2024</option>
+                            <option value="2020" class="value">2020</option>
+                            <option value="2019" class="value">2019</option>
+                            <option value="2018" class="value">2018</option>
+                            <option value="2017" class="value">2017</option>
+                        </select>
+                    </div>
+                    <div class="cards">
+                        <img src="./Images/mastercard.png" alt="">
+                        <img src="./Images/visa.jpg" alt="">
+                        <img src="./Images/paypal.png" alt="">
+                    </div>
+                </div>
+        </div>
+        <div class="conf"><button type="submit" class="btn" onclick="openPopup()">CONFIRM</button></div>
+    </div>
+    <div class="popup" id="popup">
+        <img src="./Images/blacktick.png" alt="">
+        <h3>Thank You!</h3>
+        <p>Your payment has been confirmed. Thanks!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="our-services.html">Our services</a></li>
+                        <li><a href="privacy.html">Privacy policy</a></li>
+                        <li><a href="t&m.html">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Help</h5>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                        <li><a href="order.html">Order status</a></li>
+                        <li><a href="payment.html">Payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Online Shop</h5>
+                    <ul>
+                        <li><a href="shop.html">Smartphones</a></li>
+                        <li><a href="shop.html">Laptops</a></li>
+                        <li><a href="shop.html">Refrigerators</a></li>
+                        <li><a href="shop.html">Solars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p></p>
+        <p class="copyright"> © 2024 - All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
