@@ -1,0 +1,44 @@
+main{
+    margin: 0;
+    background: url(../Images/background5.jpg);
+    padding: 0;
+}
+h2{
+    margin-left: 100px;
+    color: rgb(12, 36, 247);
+    margin-bottom: 15px;
+}
+h3{
+    margin-left: 20px;
+    color: rgb(25, 10, 228);
+    margin-top: 15px;
+}
+p{
+    color: black;
+    margin-left: 40px;
+    width: 600px;
+}
+.list li{
+    color: black;
+    margin-left: 40px;
+}
+.butt{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.butt button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.butt button{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+.butt button:hover{
+    background-color: rgb(92, 88, 88);
+}
+.butt button:hover a{
+    background-color: hwb(0 32% 66%);
+}

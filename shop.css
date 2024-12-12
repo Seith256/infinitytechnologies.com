@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+    color: rgb(238, 238, 240);
+}
+.containee{
+    display: flex;
+    flex-wrap: wrap;
+}
+.containee img{
+    width: 130px;
+    height: 150px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+    margin-top: 4px;
+}
+.desc{
+    color: black;
+    background: white;
+    width: 130px;
+    margin-bottom: 2px;
+    margin-top: 4px;
+}
+.submit button {
+    width: 130px;
+    margin-top: 0;
+}
+.submit button a{
+    text-decoration: none;
+}
